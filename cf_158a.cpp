@@ -2,8 +2,6 @@
 
 using namespace std;
 
-#define MAX_LENGTH 10
-
 int main() {
 
 #ifndef ONLINE_JUDGE
