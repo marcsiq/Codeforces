@@ -1,0 +1,7 @@
+# Custom io files
+builds/input.txt
+builds/output.txt
+
+# Built files
+*.exe
+*.o
