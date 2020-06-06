@@ -1,7 +1,6 @@
 # Custom io files
-builds/input.txt
-builds/output.txt
-template.cpp
+builds/
+
 
 # Built files
 *.exe
