@@ -17,12 +17,6 @@ int sortDragon(dragon a, dragon b)
 
 int main() {
 
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif
-
-
     int s, n;
     cin >> s >> n;
 

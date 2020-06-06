@@ -4,13 +4,8 @@ using namespace std;
 
 int main() {
 
-#ifndef ONLINE_JUDGE
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-#endif
-
-	int w;
-	cin >> w;
-	cout << ((w < 3 || w % 2) ? "NO" : "YES");
+    int w;
+    cin >> w;
+    cout << ((w < 3 || w % 2) ? "NO" : "YES");
 
 }

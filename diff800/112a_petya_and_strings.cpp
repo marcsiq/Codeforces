@@ -5,11 +5,6 @@ using namespace std;
 
 int main() {
 
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif
-
     int i, r = 0;
     int ca, cb;
     string a, b;

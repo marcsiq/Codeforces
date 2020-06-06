@@ -19,11 +19,6 @@ int burn( float c, float d, int hours = 0, float r = 0)
 
 int main() {
 
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif
-
     int a, b;
     cin >> a >> b;
 
