@@ -1,6 +1,10 @@
-# Custom io files
+# Builds
 builds/
 
+# Custom Files
+input.txt
+output.txt
+cleanbuilds.bat
 
 # Built files
 *.exe
