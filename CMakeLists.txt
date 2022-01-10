@@ -1,6 +1,7 @@
-cmake_minimum_required(VERSION 3.21.0)
+cmake_minimum_required(VERSION 3.0.0)
 project(Codeforces VERSION 0.1.0)
 
+set(CMAKE_CXX_FLAGS "-O2 -Wall -Wpedantic")
 set(CMAKE_SUPPRESS_REGENERATION true)
 
 file(GLOB SOURCE_FILES */*.cpp)
