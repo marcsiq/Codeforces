@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.0)
 project(Codeforces VERSION 0.1.0)
 
 if ( CMAKE_COMPILER_IS_GNUCC )
-    set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -O2 -Wall -Wpedantic -Wextra")
+    set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -O2 -Wconversion -Wall -Wpedantic -Wextra")
 endif()
 if ( MSVC )
     set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} /W4 /O2")

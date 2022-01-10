@@ -9,9 +9,9 @@ int main() {
 
     cin >> s;
 
-    int n = s.length();
+    size_t n = s.length();
 
-    for (int i = 1; i < n; i++)
+    for (size_t i = 1; i < n; i++)
     {
         if (islower(s[i]))
         {

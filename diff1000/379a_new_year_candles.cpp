@@ -5,21 +5,21 @@ using namespace std;
 int burn( float c, float d, int hours = 0, float r = 0)
 {
     // to correct rounding
-    r += 0.0001;
+    r += 0.0001f;
 
     float div = (c / d + r);
 
-    if ((int)div > 0)
+    if (static_cast<int>(div) > 0)
     {
-        return burn((int)div, d, hours + (int)c, div - (int)div);
+        return burn((float)static_cast<int>(div), d, hours + static_cast<int>(c), div - static_cast<int>(div));
     }
 
-    return hours + (int)c;
+    return hours + static_cast<int>(c);
 }
 
 int main() {
 
-    int a, b;
+    float a, b;
     cin >> a >> b;
 
     cout << burn(a, b);
