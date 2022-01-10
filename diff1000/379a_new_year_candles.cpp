@@ -11,7 +11,7 @@ int burn( float c, float d, int hours = 0, float r = 0)
 
     if (static_cast<int>(div) > 0)
     {
-        return burn((float)static_cast<int>(div), d, hours + static_cast<int>(c), div - static_cast<int>(div));
+        return burn((float)static_cast<int>(div), d, hours + static_cast<int>(c), div - (float)static_cast<int>(div));
     }
 
     return hours + static_cast<int>(c);
