@@ -1,8 +1,11 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(Codeforces VERSION 0.1.0)
 
-if(NOT MSVC) # Why was this here? I exempted the wierd linker flags
-    set( CMAKE_CXX_FLAGS "-O2 -Wall -Wpedantic")
+if ( CMAKE_COMPILER_IS_GNUCC )
+    set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -O2 -Wall -Wpedantic -Wextra")
+endif()
+if ( MSVC )
+    set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} /W4 /O2")
 endif()
 
 set(CMAKE_SUPPRESS_REGENERATION true)
