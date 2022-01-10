@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -7,7 +8,7 @@ int main() {
     int n, i, total = 0, mine = 0;
     cin >> n;
 
-    int a[n];
+    int* a = new int[n];
     for (i = 0; i < n; i++)
     {
         cin >> a[i];
@@ -27,4 +28,6 @@ int main() {
         }
 
     }
+
+    delete [] a;
 }

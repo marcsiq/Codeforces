@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -14,7 +15,7 @@ int main() {
 	{
 		cin >> x;
 
-		int s  = x.length();
+		size_t s  = x.length();
 
 		if (s > MAX_LENGTH)
 		{

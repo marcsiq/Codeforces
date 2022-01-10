@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -20,7 +21,7 @@ int main() {
     int s, n;
     cin >> s >> n;
 
-    dragon d[n];
+    dragon* d = new dragon[n];
 
     for (int i = 0; i < n; i++)
     {
@@ -42,4 +43,6 @@ int main() {
         }
     }
     cout << "YES";
+
+    delete [] d;
 }
